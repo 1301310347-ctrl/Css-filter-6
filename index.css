@@ -6,3 +6,51 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+#image1 {
+    filter:grayscale(100%);
+}
+
+#image2 {
+    filter: blur(3px);
+    transition: 3s;
+}
+
+#image2:hover {
+    filter: unset;
+}
+
+#image3 {
+    filter: sepia(50%) opacity(50%);
+}
+
+@keyframes color-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#image4 {
+    animation: color-rotate 4s linear;
+    animation-iteration-count: infinite;
+}
+
+#div1 {
+    background-color: aqua;
+    color: orange;
+    width: 200px;
+    height: 200px;
+    filter: blur(4px);
+       animation: color-rotate 1s linear;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+}
+
+#div2 {
+    font-size: 40px;
+    filter: drop-shadow(4px 4px 2px red)
+}
+
